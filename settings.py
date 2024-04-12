@@ -1,5 +1,5 @@
-EXCEL_PASSWORD = False   # Если ставите пароль на Excel с приватниками || True/ False
-SHUFFLE_WALLETS = False  # Перемешка кошельков                         || True/ False
+EXCEL_PASSWORD = False   # 如果你在Excel中设置了密码 || True/ False
+SHUFFLE_WALLETS = True  # 穿插钱包                        || True/ False
 
 TG_BOT_SEND = False                                 # Включить уведомления в тг или нет           || True/ False
 TG_TOKEN = ''                                       # API токен тг-бота - создать его можно здесь - https://t.me/BotFather
@@ -15,13 +15,13 @@ MAX_GAS_ETH = 100                 # gas в gwei (смотреть здесь : h
 RETRY = 5                        # Количество попыток при ошибках / фейлах
 TIME_DELAY = [200, 250]          # Задержка между МОДУЛЯМИ         [min, max]
 TIME_ACCOUNT_DELAY = [200, 300]    # Задержка между АККАУНТАМИ         [min, max]
-TIME_DELAY_ERROR = [10, 20]      # Задержка при ошибках / фейлах     [min, max]
+TIME_DELAY_ERROR = [10, 20]      # 错误延迟/ фейлах[最小，最大]
 
 
-VALUE_PRESCALE_SWAP = [0.2, 0.3, 5]  # Процент от баланса [min, max, round_decimal]
+VALUE_PRESCALE_SWAP = [0.2, 0.3, 5]  # 余额百分比[min, max, round_decimal]
 SLIPPAGE = 1  # %
 
-NUMBER_TRANS = [1, 2]   # Количество кругов ( Круг = Купил + продал )
+NUMBER_TRANS = [1, 2]   # 圈数(圈=买+卖)
 
 
 

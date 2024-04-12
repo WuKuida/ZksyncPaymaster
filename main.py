@@ -27,11 +27,11 @@ class Worker:
 
             dexs = [
                 SynkSwap,
-                Velocore,
-                Mute
+                # Velocore, # linea上的defi
+                # Mute # zks上的另一个defi
             ]
             number_trans = random.randint(NUMBER_TRANS[0], NUMBER_TRANS[1])
-            logger.info(f'Количество транзакций - {number_trans}\n')
+            logger.info(f'交易轮次 - {number_trans}\n')
             dex = random.choice(dexs)(key, str_number)
             for _ in range(number_trans):
                 token = dex.buy_token()
@@ -44,6 +44,11 @@ class Worker:
 
 
 if __name__ == '__main__':
+    print("官方跨连桥 https://portal.zksync.io/bridge/ 建议跨一次，手续费10u左右")
+    print("空投模拟器： https://wenser.xyz/check/zksync")
+    print("dune数据看板： https://dune.com/teo/zksync-airdrop-ranking")
+    print("交互协议看板： https://zk-flow.net/#/wallet/zkSync")
+    print("其他类似看板： https://zksync.netlify.app/zksync/  https://10kx.com/10kData/detail")
     list1 = get_accounts_data()
     all_wallets = len(list1)
     logger.info(f'Number of wallets: {all_wallets}\n')
